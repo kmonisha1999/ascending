@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascending order</title>
+</head>
+<body>
+    <input type="number" value="" placeholder="Enter X" id="first">
+    <input  type="number" value="" placeholder="Enter Y" id="second">
+    <input  type="number" value="" placeholder="Enter Z" id="third">
+	<button id="rev">Answer</button>
+
+<script>
+    let btn=document.getElementById("rev")
+	btn.addEventListener("click",myfunction)
+        
+		
+		function myfunction(){
+		var x=document.getElementById("first").value
+		var y=document.getElementById("second").value
+		var z=document.getElementById("third").value
+	
+    if((x>y)&&(x>z))
+	{
+	    if(y>z){
+	        console.log(z,y,x)
+		}
+		else{
+		    console.log(y,z,x)
+		}
+	}
+		else if((y>x)&&(y>z))
+		{
+			if(z>x)
+				console.log(x,z,y)
+		  
+		   else{
+			  console.log(z,x,y)
+		   }
+		}   
+		 else if((z>x)&&(z>y))
+		 {
+		    if(y>x)
+			{
+			console.log(x,y,z,)
+			}
+			else{
+			    console.log(z,x,y)
+			}
+	     }
+	else{
+        console.log("error")
+    }
+}
+
+
+
+</script>
+</body>
+</html>
